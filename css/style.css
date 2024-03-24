@@ -1433,7 +1433,9 @@ h6 {
     background-image: url('../images/banner-images/about-bg-1.jpg');
     background-size: cover;
 }
-
+#book h5{
+    padding:100px;
+}
 #books {
     margin-top: 0;
     padding-top: 0;
@@ -1442,7 +1444,9 @@ h6 {
     align-items: center;
     padding-top: 0;
 }
-
+#book h1{
+    font-weight: bold;
+}
 .split {
     height: 100%;
     display: flex;
@@ -1465,7 +1469,7 @@ h6 {
 .download-button,
 .submit-button {
     padding: 10px 20px;
-    background-color: #145495;
+    background-color: black;
     /* Light bluish color */
     color: white;
     border: none;
@@ -1477,7 +1481,7 @@ h6 {
 
 .download-button:hover,
 .submit-button:hover {
-    background-color: #4d8af0;
+    background-color: black;
     /* Darker shade when hovered */
 }
 
