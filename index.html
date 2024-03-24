@@ -296,8 +296,8 @@
         <div id="books">
           <div class="split">
             <h1>Download a Book</h1>
-            <input type="text" class="search-bar" placeholder="Enter your search..." />
-            <button class="download-button" >Download</button>
+            <input type="text" class="search-bar" id="search-bar-1" placeholder="Enter your search..." />
+            <button class="download-button" id="download-button-1">Download</button>
           </div>
           <div class="split">
             <h1>Add a Book</h1>
@@ -424,8 +424,30 @@
 
   <!-- Include JavaScript resources -->
   <script>
-    document.getElementById("download-button").addEventListener("click", function() {})
-    </script>
+    document.getElementById("download-button-1").addEventListener("click", function () {
+      var xhr = new XMLHttpRequest();
+      var url = "https://pdf-to-read-rag.onrender.com";
+      var searchTerm = document.getElementById("search-bar-1").value;
+
+      url += "/" + encodeURIComponent(searchTerm);
+
+      xhr.open("GET", url, true);
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          if (xhr.status === 200) {
+            var responseData = JSON.parse(xhr.responseText);
+            var pdfUrl = responseData["download_url"];
+            window.location.href = pdfUrl;
+          } else {
+            console.error("Error:", xhr.statusText);
+          }
+        }
+      };
+
+      xhr.send();
+    });
+  </script>
+
   <script src="js/jquery.1.8.3.min.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/featherlight.min.js"></script>
