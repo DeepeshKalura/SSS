@@ -1432,8 +1432,6 @@ h6 {
 #book {
     background-image: url('../images/banner-images/about-bg-1.jpg');
     background-size: cover;
-    height: 100vh;
-
 }
 
 #books {
@@ -1589,7 +1587,7 @@ h2 {
   .image {
     display: flex;
     flex-basis: 35%;
-    max-width: 50%
+    max-width: 30%
   }
   
   .image img {
