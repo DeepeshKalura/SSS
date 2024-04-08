@@ -138,8 +138,11 @@ a:hover, #header.nav-solid nav a:hover {
     background: url("../images/dancer.jpg") no-repeat center top;
     background-size:cover;
 }
-
-#testimonials, #gallery{
+#gallery{
+    background: url("../images/banner-images/about-bg-1.jpg") no-repeat center top;
+    background-size:cover;
+}
+#testimonials {
     background: url("../images/banner-images/about-bg-1.jpg") no-repeat center top;
     background-size:cover;
 }
