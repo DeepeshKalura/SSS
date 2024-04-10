@@ -1604,6 +1604,13 @@ h2 {
     color: #666; /* Change color if needed */
     font-size: large;
   }
+  @media only screen and (max-width: 768px) {
+    .content{
+        display: block;
+    }
+
+
+}
   
 
 /*------------------------------------------------------------------------------------------*/
