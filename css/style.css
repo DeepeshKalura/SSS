@@ -1534,37 +1534,9 @@ h2 {
     padding: 40px 0;
 }
 
-#newsletter h2 {
-    text-align: center;
-}
-
-#newsletter form {
-    text-align: center;
-}
-
-#newsletter input[type="email"] {
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #ccc;
-}
 
 
-#newsletter button {
-    padding: 10px 20px;
-    background-color: #145495;
-    /* Light bluish color */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-bottom: 10px;
-}
 
-#newsletter button:hover {
-    background-color: #4d8af0;
-    /* Darker shade when hovered */
-}
 /*------------------------------------------------------------------------------------------*/
 /* 8. Communities */
 /*------------------------------------------------------------------------------------------*/
