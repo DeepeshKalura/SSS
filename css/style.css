@@ -7,7 +7,7 @@
 - 2.2 Logo
 - 2.3 Buttons
 - 2.4 Navigation
-- 2.5 Social Elements
+- 2.5 Social Elements 
 - 2.6 Images
 3. Fonts and Headings
 4. Banner
@@ -322,7 +322,9 @@ section {
 .col-9-10 {
     width: 90%;
 }
-
+.col-42 {
+    width: 42%;
+}
 /* Golden Ratio */
 .col-61 {
     width: 61.8%;
@@ -793,6 +795,10 @@ h6 {
 }
 
 /* Section Headings */
+.graph{
+    margin-left: 250px;
+
+}
 
 .section-heading {
     padding: 0 0 15px 0;
@@ -979,6 +985,11 @@ h6 {
     position: relative;
     overflow: hidden;
 }
+#gallery img{
+    width:420px;
+    height:300px;
+}
+
 
 #gallery a:hover img {
     opacity: 0.15;
@@ -1425,90 +1436,42 @@ h6 {
     text-align: center;
     display: inline-block;
 }
-
-/* ----------------Books ------------------------------------*/
-
-
-#book {
-    background-image: url('../images/banner-images/about-bg-1.jpg');
-    background-size: cover;
-}
-#book h5{
-    padding:100px;
-}
-#books {
-    margin-top: 0;
-    padding-top: 0;
-    padding-bottom: 0;
+/* ---------------------- our team ------------------------ */
+#our-team{
+    font-family: Arial, sans-serif;
     display: flex;
-    align-items: center;
-    padding-top: 0;
-}
-#book h1{
-    font-weight: bold;
-}
-.split {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
-}
+    height: 100vh;
+    margin: 0;
+    gap: 100px;
 
-.search-bar,
-.file-upload {
-    width: 80%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
 }
-
-.download-button,
-.submit-button {
-    padding: 10px 20px;
-    background-color: black;
-    /* Light bluish color */
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin-bottom: 10px;
-}
-
-.download-button:hover,
-.submit-button:hover {
-    background-color: black;
-    /* Darker shade when hovered */
-}
-
-.content {
+.team-member {
     text-align: center;
+    margin: 20px;
 }
 
-@media only screen and (max-width: 768px) {
-    #books {
-        display: block;
-    }
-
-    .split {
-        width: 100%;
-        display: flex;
-        flex-basis: 50%;
-    }
+.team-member img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
 }
+
+.team-member h2 {
+    margin: 10px 0;
+}
+
+.team-member p {
+    margin: 5px 0;
+}
+
+
 
 /*------------------------------------------------------------------------------------------*/
 /* 7. Contact Us */
 /*------------------------------------------------------------------------------------------*/
 
-#contact-us,
-#newsletter {
-    background: url("../images/banner-images/about-bg-1.jpg");
-}
 
 .container {
     max-width: 800px;
@@ -1530,7 +1493,7 @@ h2 {
 }
 
 #newsletter {
-    background: url("../images/banner-images/about-bg-1.jpg");
+    
     padding: 40px 0;
 }
 
@@ -1542,7 +1505,7 @@ h2 {
 /*------------------------------------------------------------------------------------------*/
 
 #Communities{
-    background: url("../images/banner-images/about-bg-1.jpg");
+    
 }
 .cards {
     display: flex;
@@ -1580,7 +1543,10 @@ h2 {
     .content{
         display: block;
     }
-
+   #our-team{
+         display: block;
+    
+   }
 
 }
   
